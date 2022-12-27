@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components
+{
+    .btn
+    {
+        @apply font-semibold text-xl w-72 mx-auto text-white py-3 rounded-3xl cursor-pointer border-b-4 border-solid border-b-[rgba(0,0,0,0.5)] transition-colors duration-200 hover:brightness-110 active:bg-dark-grayish-blue;
+    }
+    .social-link
+    {
+        @apply cursor-pointer border-[1px] rounded-[50%] border-solid border-black hover:border-light-blue hover:text-light-blue transition-colors duration-200 text-xl w-10 h-10 flex justify-center items-center;
+    }
+}
