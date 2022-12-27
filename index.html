@@ -14,14 +14,14 @@
   <main>
 
     <!-- Header -->
-    <header class="relative before:content-[''] before:w-full before:h-full before:absolute before:bg-[url('./images/bg-header-mobile.png')] before:bg-cover before:bg-no-repeat font-bai">
-      <div class="py-16 pt-24 px-6 flex flex-col gap-4">
+    <header class="relative before:content-[''] before:w-full before:h-full before:absolute before:bg-[url('./images/bg-header-mobile.png')] before:bg-cover before:bg-no-repeat font-bai md:before:bg-[url('./images/bg-header-desktop.png')]">
+      <div class="relative py-16 pt-24 px-6 flex flex-col gap-4">
         <div class="flex justify-center">
           <img class="w-24" src="./images/logo.svg" alt="logo">
         </div>
-        <h1 class="text-3xl font-semibold text-center text-dark-grayish-blue">A history of everything you copy</h1>
-        <p class="text-grayish-blue text-center">Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your devices.</p>
-        <div class="flex flex-col gap-4">
+        <h1 class="text-3xl font-semibold text-center text-dark-grayish-blue md:text-4xl">A history of everything you copy</h1>
+        <p class="text-grayish-blue text-center md:text-lg">Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your devices.</p>
+        <div class="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
           <button class="bg-strong-cyan btn">Download for iOS</button>
           <button class="bg-light-blue btn">Download for Mac</button>
         </div>
@@ -29,71 +29,71 @@
     </header>
 
     <!-- Bridge -->
-    <section class="mb-12">
-      <div class="px-6 flex flex-col gap-4">
-        <h2 class="text-3xl font-semibold text-center text-dark-grayish-blue">Keep track of your snippets</h2>
-        <p class="text-grayish-blue text-center">Clipboard instantly stores any item you copy in the cloud, meaning you can access your snippets immediately on all your devices. Our Mac and iOS apps will help you organize everything.</p>
+    <section class="my-16 flex justify-center">
+      <div class="px-6 flex flex-col gap-4 md:max-w-4xl">
+        <h2 class="text-3xl font-semibold text-center text-dark-grayish-blue md:text-4xl">Keep track of your snippets</h2>
+        <p class="text-grayish-blue text-center md:text-lg">Clipboard instantly stores any item you copy in the cloud, meaning you can access your snippets immediately on all your devices. Our Mac and iOS apps will help you organize everything.</p>
       </div>
       
     </section>
 
     <!-- Features -->
     <section class="mt-4 mb-12">
-      <div class="px-6 flex flex-col gap-6">
-        <div class="">
-          <img src="./images/image-computer.png" alt="computer-image">
+      <div class="px-6 flex flex-col gap-6 md:flex-row md:justify-center md:gap-12">
+        <div class="flex justify-center">
+          <img class="max-w-md" src="./images/image-computer.png" alt="computer-image">
         </div>
-        <div class="flex flex-col gap-4">
-          <div>
-            <h3 class="text-2xl font-semibold text-center text-dark-grayish-blue">Quick Search</h3>
-            <p class="text-grayish-blue text-center">Easily search your snippets by content, category, web address, application, and more.</p>
+        <div class="flex flex-col gap-4 items-center md:justify-between">
+          <div class="max-w-sm text-center md:text-start">
+            <h3 class="text-2xl font-semibold text-dark-grayish-blue">Quick Search</h3>
+            <p class="text-grayish-blue sm:text-lg">Easily search your snippets by content, category, web address, application, and more.</p>
           </div>
-          <div>
-            <h3 class="text-2xl font-semibold text-center text-dark-grayish-blue">iCloud Sync</h3>
-            <p class="text-grayish-blue text-center">Instantly saves and syncs snippets across all your devices.</p>
+          <div class="max-w-sm text-center md:text-start">
+            <h3 class="text-2xl font-semibold text-dark-grayish-blue">iCloud Sync</h3>
+            <p class="text-grayish-blue sm:text-lg">Instantly saves and syncs snippets across all your devices.</p>
           </div>
-          <div>
-            <h3 class="text-2xl font-semibold text-center text-dark-grayish-blue">Quick Search</h3>
-            <p class="text-grayish-blue text-center">Retrieve any snippets from the first moment you started using the app.</p>
+          <div class="max-w-sm text-center md:text-start">
+            <h3 class="text-2xl font-semibold text-dark-grayish-blue">Quick Search</h3>
+            <p class="text-grayish-blue sm:text-lg">Retrieve any snippets from the first moment you started using the app.</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Accessibility -->
-    <section class="mb-12">
-      <div class="px-6 flex flex-col gap-6">
+    <section class="my-16 flex justify-center">
+      <div class="px-6 flex flex-col gap-6 max-w-2xl sm:max-w-3xl md:max-w-4xl">
         <div class="flex flex-col gap-4">
-          <h2 class="text-3xl font-semibold text-center text-dark-grayish-blue">Access Clipboard anywhere</h2>
-          <p class="text-grayish-blue text-center">Whether you're on the go, or at your computer, you can access all your Clipboard snippets in a few simple clicks.</p>
+          <h2 class="text-3xl font-semibold text-center text-dark-grayish-blue md:text-4xl">Access Clipboard anywhere</h2>
+          <p class="text-grayish-blue text-center md:text-xl">Whether you're on the go, or at your computer, you can access all your Clipboard snippets in a few simple clicks.</p>
         </div>
-        <div>
-          <img src="./images/image-devices.png" alt="devices-image">
+        <div class="flex justify-center items-center">
+          <img class="w-full max-w-md md:max-w-lg lg:max-w-lg" src="./images/image-devices.png" alt="devices-image">
         </div>
       </div>
     </section>
 
     <!-- Workflow -->
     <section class="mb-12">
-      <div class="px-6">
+      <div class="px-6 flex flex-col gap-10">
 
         <div class="flex flex-col gap-4">
-          <h2 class="text-3xl font-semibold text-center text-dark-grayish-blue">Supercharge your workflow</h2>
-          <p class="text-grayish-blue text-center">We've got the tools to boost your productivity.</p>
+          <h2 class="text-3xl font-semibold text-center text-dark-grayish-blue md:text-4xl">Supercharge your workflow</h2>
+          <p class="text-grayish-blue text-center md:text-xl">We've got the tools to boost your productivity.</p>
         </div>
 
-        <div class="flex flex-col gap-8 mt-6">
-          <div class="flex flex-col items-center gap-2">
+        <div class="flex flex-col gap-8 mt-6 items-center md:flex-row md:items-start md:justify-center">
+          <div class="flex flex-col items-center gap-2 w-full max-w-sm md:max-w-[20rem]">
             <img class="w-16" src="./images/icon-blacklist.svg">
             <h4 class="text-xl font-semibold text-center text-dark-grayish-blue">Create blacklists</h4>
             <p class="text-grayish-blue text-center">Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p>
           </div>
-          <div class="flex flex-col items-center gap-2">
+          <div class="flex flex-col items-center gap-2 w-full max-w-sm md:max-w-[20rem]">
             <img class="w-16" src="./images/icon-text.svg">
             <h4 class="text-xl font-semibold text-center text-dark-grayish-blue">Plain text snippets</h4>
             <p class="text-grayish-blue text-center">Remove unwanted formatting from copied text for a consistent look.</p>
           </div>
-          <div class="flex flex-col items-center gap-2">
+          <div class="flex flex-col items-center gap-2 w-full max-w-sm md:max-w-[20rem]">
             <img class="w-16" src="./images/icon-preview.svg">
             <h4 class="text-xl font-semibold text-center text-dark-grayish-blue">Sneak preview</h4>
             <p class="text-grayish-blue text-center">Quick preview of all snippets on your Clipboard for easy access.</p>
@@ -103,22 +103,22 @@
     </section>
 
     <!-- Companies -->
-    <section class="py-8 mb-8">
-      <ul class="px-6 flex flex-col items-center gap-16">
-        <li class="w-40"><img class="w-full" src="./images/logo-google.png" alt="google-logo"></li>
-        <li class="w-40"><img class="w-full" src="./images/logo-ibm.png" alt="ibm-logo"></li>
-        <li class="w-40"><img class="w-full" src="./images/logo-microsoft.png" alt="microsoft-logo"></li>
-        <li class="w-40"><img class="w-full" src="./images/logo-hp.png" alt="hp-logo"></li>
-        <li class="w-40"><img class="w-full" src="./images/logo-vector-graphics.png" alt="vector-graphics-logo"></li>
+    <section class="my-16">
+      <ul class="px-6 flex flex-col items-center gap-16 sm:flex-row sm:flex-wrap sm:justify-center">
+        <li class="w-40 sm:w-48"><img class="w-full" src="./images/logo-google.png" alt="google-logo"></li>
+        <li class="w-40 sm:w-48"><img class="w-full" src="./images/logo-ibm.png" alt="ibm-logo"></li>
+        <li class="w-40 sm:w-48"><img class="w-full" src="./images/logo-microsoft.png" alt="microsoft-logo"></li>
+        <li class="w-40 sm:w-48"><img class="w-full" src="./images/logo-hp.png" alt="hp-logo"></li>
+        <li class="w-40 sm:w-48"><img class="w-full" src="./images/logo-vector-graphics.png" alt="vector-graphics-logo"></li>
       </ul>
     </section>
 
     <!-- Links -->
-    <section>
-      <div class="px-6 flex flex-col gap-6">
-        <h2 class="text-3xl font-semibold text-center text-dark-grayish-blue">Clipboard for iOS and Mac OS</h2>
+    <section class="my-16 flex justify-center">
+      <div class="px-6 flex flex-col gap-6 sm:max-w-2xl">
+        <h2 class="text-3xl font-semibold text-center text-dark-grayish-blue  md:text-4xl">Clipboard for iOS and Mac OS</h2>
         <p class="text-grayish-blue text-center">Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you're ready to start adding to your clipboard.</p>
-        <div class="flex flex-col gap-4">
+        <div class="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
           <button class="bg-strong-cyan btn">Download for iOS</button>
           <button class="bg-light-blue btn">Download for Mac</button>
         </div>
@@ -127,13 +127,13 @@
   </main>
 
   <!-- Footer -->
-  <footer class="bg-gray-100 py-10 mt-12">
-    <div class="px-6 flex flex-col">
-      <div class="flex justify-center">
-        <img class="w-20" src="./images/logo.svg">
+  <footer class="bg-gray-100 py-16 mt-12 lg:flex lg:justify-center">
+    <div class="px-6 w-full flex flex-col sm:flex-row sm:justify-around md:grid md:grid-cols-[1fr,4fr] md:grid-rows-2 lg:grid-cols-[1fr,4fr,1fr] lg:grid-rows-1 lg:max-w-7xl">
+      <div class="flex justify-center md:row-span-2 lg:row-span-1">
+        <img class="w-20 h-20" src="./images/logo.svg">
       </div>
-      <div class="py-6">
-        <ul class="font-semibold flex flex-col items-center gap-4 text-lg">
+      <div class="py-6 sm:pt-0 md:pb-0 md:flex md:justify-center lg:justify-start lg:pl-16">
+        <ul class="font-semibold flex flex-col items-center gap-4 text-lg sm:items-start md:flex-row lg:grid lg:grid-cols-3 lg:grid-rows-2">
           <li class="hover:underline cursor-pointer">FAQs</li>
           <li class="hover:underline cursor-pointer">Contact Us</li>
           <li class="hover:underline cursor-pointer">Privacy Policy</li>
@@ -142,7 +142,7 @@
         </ul>
       </div>
       <div class="flex justify-center">
-        <ul class="flex gap-3">
+        <ul class="flex gap-3 sm:flex-col md:flex-row">
           <li><i class="fa fa-facebook social-link"></i></li>
           <li><i class="fa fa-twitter social-link"></i></li>
           <li><i class="fa fa-instagram social-link"></i></li>
